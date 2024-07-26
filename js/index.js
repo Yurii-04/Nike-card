@@ -7,7 +7,7 @@ export const promoState = {
 };
 
 // promoCode
-import {checkPromoCode} from './modules/PromoCode.js';
+import {checkPromoCode} from './modules/promoCode.js';
 
 const PROMOCODE = '123'
 const promoBtn = document.getElementById('promo-btn');
