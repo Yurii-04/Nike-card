@@ -8,12 +8,14 @@ export const promoState = {
 
 // promoCode
 import {checkPromoCode} from './modules/promoCode.js';
-
 const PROMOCODE = '123'
 const promoBtn = document.getElementById('promo-btn');
 const callPromoCode = checkPromoCode(PROMOCODE);
-promoBtn.onclick = () => callPromoCode();
 
+promoBtn.onclick = (event) => {
+    event.preventDefault();
+    callPromoCode();
+};
 //changePrice
 import changePrice from './modules/changePrice.js';
 changePrice();
