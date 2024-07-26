@@ -6,12 +6,12 @@ const input = document.querySelector('.promo-input');
 const price = document.getElementById('out-price');
 
 function handlePromoCodeSuccess() {
-    const src = '../img/checkmark.svg';
+    const src = '../../img/checkmark.svg';
     showModal(src, 'Your promo code applied successfully');
 }
 
 function handlePromoCodeError(message) {
-    const src = '../img/cross.svg';
+    const src = '../../img/cross.svg';
     showModal(src, message);
 }
 
